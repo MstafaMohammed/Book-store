@@ -1,0 +1,106 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition:all .2s linear;
+    transition:width none;
+}
+:root{
+    --green:#27ae60;
+    --dark-color:green;
+    --black:#444;
+    --light-color:#666;
+    --border:.1rem solid rgba(0,0,0,.1);
+    --border-hover:.1rem solid var(--black);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    --transition: .3s;
+    --main-color:#2196f3;
+    --background-hover-color:#ececec;
+}
+html{
+    font-size: 15px;
+    overflow-x: hidden;
+    scroll-padding-top: 5rem;
+    scroll-behavior: smooth;
+    height: 100vh;
+
+}
+.main
+{
+    background-color: #f1f1f1;
+
+}
+.main .container
+{
+    padding: 20px;
+    background-color: white;
+    margin: auto ;
+    padding: 20px;
+    border: var(--border);
+    width: 80%;
+
+}
+.main .container .logo
+{
+    font-size: 25px;
+    margin-bottom: 40px;
+    padding: 20px 50px;
+    border-bottom: 2px solid #77777730;
+}
+.main .container .logo i
+{
+    color: var(--main-color);
+}
+.main .container .location
+{
+    padding: 0 50px 50px;
+    line-height: 2;
+    border-bottom: 2px solid #77777730;
+}
+.main .container .location li
+{
+    color: #666;
+    font-weight: 600;
+}
+.main .container .location li span
+{
+    color: black;
+}
+.main .container .main-title
+{
+    text-align: center;
+    padding: 50px;
+    line-height: 1.6;
+    font-size: 18px;
+}
+.main .container .main-title p
+{
+    color: #666;
+}
+.main .container .Information
+{
+    padding: 20px;
+    line-height: 2;
+    font-weight: 500;
+    color: #666;
+}
+.main .container .Information span
+{
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+.main .container .Information i
+{
+    font-size: 18px;
+    color: brown;
+    font-weight: 600;
+}
+.main .container img
+{
+    width: 600px;
+    margin-top: 70px;
+}

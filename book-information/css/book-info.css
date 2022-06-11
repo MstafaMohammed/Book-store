@@ -1,0 +1,206 @@
+:root{
+    --main-color:#2196f3;
+    --secound-color:#E0c7fb;
+    --black:#444;
+    --light-color:#666;
+    --border:.1rem solid rgba(0,0,0,.1);
+    --border-hover:.1rem solid var(--black);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition:all .2s linear;
+    transition:width none;
+}
+
+html{
+    font-size: 15px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    height: 100vh;
+    direction: rtl;
+
+}
+/* start book-information */
+.book-info
+{
+    margin: 30px;
+
+}
+.book-info::before {
+    content: "";
+    position: fixed;
+    width: 300%;
+    height: 100%;
+    background-color: var(--main-color);
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) skew(0, -10deg);
+    border-radius: 50%;
+    z-index: -1;
+    animation: waving 3s ease-in-out infinite alternate;
+}
+@keyframes waving {
+    from {
+        transform: translateX(-50%) skew(0, -10deg);
+    }
+    to {
+        transform: translateX(-30%) skew(10deg, 0);
+    }
+}
+.book-info .media 
+{
+    border: 2px solid var(white);
+    display: flex;
+    height: 500px;
+    width: 600px;
+    margin: auto;
+    position: relative;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 10px 15px 4px 3px var(--black);
+} 
+
+.book-info .media .image 
+{
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    padding-left: 30px;
+    border-left: 2px solid #777;
+    height: 80%;
+}
+.book-info .media .image img
+{
+    max-width: 200px;
+    border-radius: 5px;
+    height: 200px;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.book-info .media-text
+{
+    text-transform: lowercase;
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    line-height: 2;
+
+}
+.book-info .media-text h2
+{
+    font: 25px;
+    font-weight: 700px;
+    margin-bottom: 10px;
+}
+
+
+.book-info .media-text .raet
+{
+    display: flex;
+}
+.book-info .media-text .raet i
+{
+    color: yellow;
+    font-size: 15px;
+}
+
+.book-info .media-text .raet span
+{
+    font-size: 15px;
+    margin-right: 10px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.book-info .media-text table tbody
+{
+    font-size: 20px;
+    font-weight: 500;
+}
+.book-info .media-text table tbody tr td:first-child
+{
+    padding-left: 15px;
+    font-weight: 600;
+}
+.book-info .media-text table tbody tr td:last-child
+{
+    font-weight: 500;
+}
+.book-info .media-text table tbody tr td a
+{
+    color: var(--main-color);
+    transition: .3s;
+}
+.book-info .media-text table tbody tr td a:hover
+{
+    color: var(--light-color);
+    text-decoration: underline;
+    color: aqua;
+    margin-right: 5px;
+}
+/* end book-information */
+/* ================================= */
+/* start book describtion */
+.desc
+{
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+}
+.desc .container
+{
+    box-shadow: 10px 15px 4px 3px var(--black);
+    height: 300px;
+    width: 1000px;
+    margin: auto;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 2;
+    
+}
+.desc .container .text
+{
+    padding: 20px 20px 0;
+}
+.desc .container .text h2
+{
+    position: relative;
+    margin-bottom: 20px;
+    text-align: center;
+    justify-content: center;
+}
+.desc .container .text h2::after
+{
+    content: "";
+    width: 100px;
+    height: 4px;
+    position: absolute;
+    top: 88%;
+    right: 45%;
+    background-color: var(--main-color);
+}
+.desc .container .text p
+{
+    color: var(--light-color);
+}
+
+
+
+
+
+
+/* end book describtion */
+
+
+
+
+
